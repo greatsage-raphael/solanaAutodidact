@@ -50,7 +50,7 @@ export default function Holders() {
 
   useEffect(() => {
     getUserNfts();
-  }, []);
+  }, [getUserNfts]);
 
   if (userNfts.length === 0) {
     return <PageHeading>Holders only! ☠️</PageHeading>;
