@@ -8,7 +8,7 @@ export default function Navbar() {
           Autodidact
       </Link>
       <Link href="/collection" className="text-2xl no-underline text-grey-darkest hover:text-slate-300 grow">
-          Certificates 
+          Certificates 🎓📜
       </Link>
 
       <WalletMultiButton /> 
