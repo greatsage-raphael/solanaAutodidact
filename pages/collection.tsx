@@ -46,8 +46,8 @@ export default function Holders() {
   }
 
   useEffect(() => {
-    getUserNfts()
-  }, [wallet.publicKey])
+    getUserNfts();
+  }, [getUserNfts, wallet.publicKey]);
 
   if (userNfts.length === 0) {
     return (
