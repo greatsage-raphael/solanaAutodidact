@@ -50,6 +50,7 @@ export default function Holders() {
 
   useEffect(() => {
     getUserNfts();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wallet.publicKey]);
 
   if (userNfts.length === 0) {
