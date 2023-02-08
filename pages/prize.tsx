@@ -46,6 +46,12 @@ export default function Prize() {
   async function mintOne() {
     setIsMinting(true);
 
+    if (!candyMachine) {
+      console.error("Candy machine is not defined!");
+      setIsMinting(false);
+      return;
+    }
+
     const mintOutput = await candyMachines
       .mint({ candyMachine });
 
@@ -85,7 +91,7 @@ export default function Prize() {
       ) : <p className="text-white">Loading...</p>
       }
 
-      {mintedNft ?
+      {mintedNft && candyMachine ?
         <div className="w-96">
           <h2 className="text-xl font-medium text-white">You minted a {candyMachine.symbol}! 🎉</h2>
           <NftDisplay json={mintedNft.json} />
