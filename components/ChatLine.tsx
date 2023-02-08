@@ -15,11 +15,11 @@ export const LoadingChatLine = () => (
   <div className="flex min-w-full animate-pulse px-4 py-5 sm:px-6">
     <div className="flex flex-grow space-x-3">
       <div className="min-w-0 flex-1">
-        <p className="font-large text-xxl text-gray-900">
+        <button className="font-large text-xxl text-gray-900">
           <Link href="#" className="hover:underline">
-            AI
+            Jarvis 🤖
         </Link>
-        </p>
+        </button>
         <div className="space-y-4 pt-4">
           <div className="grid grid-cols-3 gap-4">
             <div className="col-span-2 h-2 rounded bg-zinc-500"></div>
@@ -59,7 +59,7 @@ export function ChatLine({ who = 'bot', message }: Message) {
             <div className="flex-1 gap-4">
               <p className="font-large text-xxl text-gray-900">
                 <Link href="#" className="hover:underline">
-                {who == 'bot' ? 'AI' : 'You'}
+                {who == 'bot' ? 'Jarvis🤖' : 'You'}
                 </Link>
               </p>
               <p
