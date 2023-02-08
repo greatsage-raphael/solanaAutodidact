@@ -22,10 +22,10 @@ export const LoadingChatLine = () => (
         </button>
         <div className="space-y-4 pt-4">
           <div className="grid grid-cols-3 gap-4">
-            <div className="col-span-2 h-2 rounded bg-zinc-500"></div>
-            <div className="col-span-1 h-2 rounded bg-zinc-500"></div>
+            <div className="col-span-2 h-2 rounded bg-zinc-900"></div>
+            <div className="col-span-1 h-2 rounded bg-zinc-700"></div>
           </div>
-          <div className="h-2 rounded bg-zinc-500"></div>
+          <div className="h-2 rounded bg-zinc-900"></div>
         </div>
       </div>
     </div>
@@ -54,7 +54,7 @@ export function ChatLine({ who = 'bot', message }: Message) {
       }
     >
       
-        <div className="float-right mb-5 rounded-lg bg-white px-4 py-5 shadow-lg ring-1 ring-zinc-100 sm:px-6">
+        <div className="float-right mb-5 rounded-lg bg-white px-4 py-5 shadow-lg ring-1 ring-zinc-300 sm:px-6">
           <div className="flex space-x-3">
             <div className="flex-1 gap-4">
               <p className="font-large text-xxl text-gray-900">
@@ -65,7 +65,7 @@ export function ChatLine({ who = 'bot', message }: Message) {
               <p
                 className={clsx(
                   'text ',
-                  who == 'bot' ? 'font-semibold font- ' : 'text-gray-400'
+                  who == 'bot' ? 'font-semibold font- ' : 'text-gray-900'
                 )}
               >
                 {formatteMessage}
