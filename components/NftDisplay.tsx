@@ -5,7 +5,8 @@ interface NftProps {
 }
 
 export default function NftDisplay({ json }: NftProps) {
-  const certificate = json.attributes?.find(a => a.trait_type === "Certificate").value
+  const certificate = (json.attributes?.find(a => a.trait_type === "Certificate") || {}).value || "";
+
 
   return (
     <div className="flex flex-col gap-4">
