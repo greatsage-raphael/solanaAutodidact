@@ -1,32 +1,18 @@
-# AI Chat GPT-3 example
+# Autodidact
 
-This example shows how to implement a simple chat bot using Next.js, API Routes, and [OpenAI API](https://beta.openai.com/docs/api-reference/completions/create).
+[Autodidact](https://solana-autodidact.vercel.app/) is an educational app that rewards its learners with nfts and other prizes from assignments, tests and streaks. The app would avail disciplines that have been so far ignored in our current educational system e.g ethics, philosophy, anthropology, computer science . It would also present current disciplines in an easy to understand manner using quizzes.
+
 
 ### Components
 
 - Next.js
+- Solana CLI
+- Metaplex (Sugar CLI)
 - OpenAI API (REST endpoint)
 - API Routes (Edge runtime)
+-
 
 ## How to Use
-
-You can choose from one of the following two methods to use this repository:
-
-### One-Click Deploy
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/ai-chatgpt&project-name=ai-chatgpt&repository-name=ai-chatgpt&env=OPENAI_API_KEY)
-
-### Clone and Deploy
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example https://github.com/vercel/examples/tree/main/solutions/ai-chatgpt
-# or
-yarn create next-app --example https://github.com/vercel/examples/tree/main/solutions/ai-chatgpt
-```
 
 #### Set up environment variables
 
