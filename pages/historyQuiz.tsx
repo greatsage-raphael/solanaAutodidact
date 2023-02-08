@@ -3,13 +3,17 @@ import Head from "next/head";
 import { useState } from "react";
 import Link from 'next/link';
 
+interface SelectedOption {
+  answerByUser: string;
+}
+
 export default function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [selectedOptions, setSelectedOptions] = useState([]);
+  const [selectedOptions, setSelectedOptions] = useState<SelectedOption[]>([]);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
 
-  const handleAnswerOption = (answer) => {
+  const handleAnswerOption = (answer: string) => {
     setSelectedOptions([
       (selectedOptions[currentQuestion] = { answerByUser: answer }),
     ]);

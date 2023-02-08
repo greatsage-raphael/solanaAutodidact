@@ -1,9 +1,9 @@
 import clsx from 'clsx'
-import Balancer from 'react-wrap-balancer'
+//import Balancer from 'react-wrap-balancer'
 import Link from 'next/link'
 
 // wrap Balancer to remove type errors :( - @TODO - fix this ugly hack
-const BalancerWrapper = (props: any) => <Balancer {...props} />
+//const BalancerWrapper = (props: any) => <Balancer {...props} />
 
 export type Message = {
   who: 'bot' | 'user' | undefined
@@ -53,7 +53,7 @@ export function ChatLine({ who = 'bot', message }: Message) {
         who != 'bot' ? 'float-right clear-both' : 'float-left clear-both'
       }
     >
-      <BalancerWrapper>
+      
         <div className="float-right mb-5 rounded-lg bg-white px-4 py-5 shadow-lg ring-1 ring-zinc-100 sm:px-6">
           <div className="flex space-x-3">
             <div className="flex-1 gap-4">
@@ -73,7 +73,6 @@ export function ChatLine({ who = 'bot', message }: Message) {
             </div>
           </div>
         </div>
-      </BalancerWrapper>
     </div>
   )
 }
