@@ -63,7 +63,7 @@ Experience in Assessing Past Examples of Change:<br/> Experience in assessing pa
       <Section>
 Historical study, in sum, is crucial to the promotion of that elusive creature, the well-informed citizen. It provides basic factual information about the background of our political institutions and about the values and problems that affect our social well-being. It also contributes to our capacity to use evidence, assess interpretations, and analyze change and continuities. No one can ever quite deal with the present as the historian deals with the past—we lack the perspective for this feat; but we can move in this direction by applying historical habits of mind, and we will function as better citizens in the process.
       </Section>
-    </main>
+    </main> <br />
 
     
 
