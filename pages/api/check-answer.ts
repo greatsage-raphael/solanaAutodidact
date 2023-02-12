@@ -68,9 +68,6 @@ export default async function Open(
     return;
   }
 
-  // If we get here then the answer was correct
-
-  // TODO: send the reward!
 
   res.status(200).json({
     kind: "correct",
