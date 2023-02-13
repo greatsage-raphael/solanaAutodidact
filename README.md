@@ -1,6 +1,6 @@
 # Autodidact
 
-An educational app that rewards its learners with nfts and other prizes from assignments, tests and streaks. The app would avail disciplines that have been so far ignored in our current educational system e.g ethics, philosophy, anthropology, computer science . It would also present current disciplines in an easy to understand manner using quizzes.
+An educational app that rewards its learners with certificates in the form of nfts from assignments and tests on the Solana blockchain. The certificates are unique and prove a learners qualification in a particular subject. The app would avail disciplines that have been so far ignored in our current educational system e.g ethics, philosophy, anthropology, computer science . It would also present current disciplines in an easy to understand manner using quizzes.
 
 ### Components
 
