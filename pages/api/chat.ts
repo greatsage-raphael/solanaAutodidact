@@ -7,8 +7,8 @@ if (!process.env.OPENAI_API_KEY) {
   throw new Error('Missing Environment Variable OPENAI_API_KEY')
 }
 
-const botName = 'AI'
-const userName = 'News reporter' // TODO: move to ENV var
+const botName = 'Jarvis'
+const userName = 'Autodidact' // TODO: move to ENV var
 const firstMessge = initialMessages[0].message
 
 // @TODO: unit test this. good case for unit testing
