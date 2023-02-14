@@ -82,14 +82,6 @@ export default function QuizQuestion({
           <p className="text-green-800">
             Congratulations! That was the right answer!
           </p>
-          {/* <p>
-            A pack will be sent to you shortly. You'll be able to check it out
-            and open it in the{" "}
-            <Link href="/lounge">
-              <a className="underline hover:no-underline">lounge</a>
-            </Link>
-            !
-          </p> */}
         </>
       );
     }
