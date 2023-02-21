@@ -22,6 +22,14 @@ export default function Home() {
         </button> 
       </Link>
 
+      <Link href="/SelfAnalysis">
+        <button
+          type="button"
+          className="inline-flex items-center px-4 py-2 text-sm font-medium text-indigo-700 bg-indigo-100 border border-transparent rounded-md cursor-pointer hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed">
+         Self Analysis 🔍
+        </button> 
+        </Link>
+
       {/* <Link href="/math">
       <button
           type="button"
@@ -39,6 +47,10 @@ export default function Home() {
          History ⏳🌎🛕
         </button> 
         </Link>
+
+    
+
+        
 
         {/* <Link href="/computerScience">
       <button
