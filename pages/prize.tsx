@@ -71,7 +71,7 @@ export default function Prize() {
 
   return (
     <main className="flex flex-col gap-8">
-      <PageHeading>Collect them all to win a speial prize 🎉</PageHeading>
+      <PageHeading>Congratulations 🎉</PageHeading>
 
       <div className="basis-1/4">
         <button
