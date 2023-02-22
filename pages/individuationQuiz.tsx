@@ -1,5 +1,5 @@
 import HistoryGame from "../components/quizGame";
-import historyQuestions from "../questions/firstPrinciples";
+import historyQuestions from "../questions/individuation";
 
 export default function HistoryQuiz() {
   // Delete the correct answer fields before rendering!
