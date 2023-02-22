@@ -9,7 +9,7 @@ export type Question = {
     {
       questionText: "What is self-analysis?",
       image:
-        "https://images.unsplash.com/photo-1604580864964-0462f5d5b1a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "https://media.licdn.com/dms/image/C5112AQEWvUEIBuMgNw/article-cover_image-shrink_423_752/0/1537272996699?e=1682553600&v=beta&t=j3N-J216ko1JTY_9SSoDSYeh7e-KB4eit5Xu8VHf0Kw",
       answers: [
         "A process of looking at other people's behavior",
         "A process of introspection that involves reflecting on one's thoughts, feelings, beliefs, and behaviors in order to gain a deeper understanding of oneself",
@@ -20,7 +20,7 @@ export type Question = {
     },
     {
       questionText: 'What are some benefits of self-analysis?',
-      image: "https://images.unsplash.com/photo-1582034438152-77bc94ffa6ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGhpc3Rvcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      image: "https://media.licdn.com/dms/image/C5112AQHZPj32l7vC8g/article-cover_image-shrink_423_752/0/1554144423739?e=1682553600&v=beta&t=DbmxQmS7ZUDP3b_kS6mjOcoyPk5AKCdj4DnW-_yCt2I",
       answers: [
         "It helps to identify strengths and weaknesses", 
         "It helps to better understand one's emotions and feelings", 
@@ -30,13 +30,13 @@ export type Question = {
       correctAnswerIndex: 3,
     },
     {
-      questionText: "",
+      questionText: "Who developed the concept of self-analysis?",
       image:
-        "https://images.unsplash.com/photo-1574088768814-c71125083959?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGhpc3Rvcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "https://upload.wikimedia.org/wikipedia/commons/3/30/Karen_Horney_1938.jpg",
       answers: [
         "There is no one inventor of the concept of self-analysis as it has evolved over time through the contributions of many different individuals.",
        "Sigmund Freud", 
-       "Aristotle", 
+       "Karen Horny", 
        "Socrates"
     ],
       correctAnswerIndex: 0,
@@ -45,7 +45,7 @@ export type Question = {
       questionText:
         "What is the key to effective self-analysis?",
         image:
-        "https://andscape.com/wp-content/uploads/2017/01/gettyimages-5307291001.jpg?w=700",
+        "https://images.unsplash.com/photo-1620424393934-04e772be09f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       answers: [
         "Approaching the process with an open and honest mindset",  
         "Being willing to engage in a critical evaluation of one's own behavior and thought patterns", 
