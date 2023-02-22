@@ -9,7 +9,7 @@ export type Question = {
     {
       questionText: "What is individuation?",
       image:
-        "https://images.unsplash.com/photo-1604580864964-0462f5d5b1a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "https://jungcurrents.com/wp-content/uploads/2021/12/jungcurrents-jung-quote-wholeness-121021-1000x500.jpg",
       answers: [
         "A process of eliminating all negative aspects of the self",
         "A process of becoming a fully developed individual",
@@ -20,7 +20,7 @@ export type Question = {
     },
     {
       questionText: 'Who coined the term "individuation" ?',
-      image: "https://images.unsplash.com/photo-1582034438152-77bc94ffa6ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGhpc3Rvcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      image: "https://www.google.com/url?sa=i&url=http%3A%2F%2Ft3.gstatic.com%2Flicensed-image%3Fq%3Dtbn%3AANd9GcTsroDYfVtmiqwlgiEIinpOdtiLu8diDNmMJ81erl0pxGa_71naICfTCw5MYadk7Ii_0nupGTaeeX_npy4&psig=AOvVaw2fnilVO0mar_cH1fg0rflG&ust=1677142751223000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCKjejOHhqP0CFQAAAAAdAAAAABAE",
       answers: [
         "Sigmund Freud", 
         "Abraham Maslow", 
@@ -32,7 +32,7 @@ export type Question = {
     {
       questionText: "What is the goal of individuation?",
       image:
-        "https://images.unsplash.com/photo-1574088768814-c71125083959?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGhpc3Rvcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "https://www.azquotes.com/picture-quotes/quote-the-attainment-of-wholeness-requires-one-to-stake-one-s-whole-being-nothing-less-will-carl-jung-58-94-92.jpg",
       answers: [
         "To create a sense of wholeness and balance",
        "To eliminate all negative aspects of the self", 
@@ -45,7 +45,7 @@ export type Question = {
       questionText:
         "At what stage of individuation does an individual begin to separate from their usual way of life and explore new experiences and ways of being?",
         image:
-        "https://andscape.com/wp-content/uploads/2017/01/gettyimages-5307291001.jpg?w=700",
+        "https://jungcurrents.com/wp-content/uploads/2021/12/jungcurrents-jung-quote-wholeness-duccio-121021-1000x500.jpg",
       answers: [
         "The Call to Adventure",  
         "Confrontation and Crisis", 

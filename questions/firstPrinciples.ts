@@ -9,7 +9,7 @@ export type Question = {
     {
       questionText: "What are first principles?",
       image:
-        "https://images.unsplash.com/photo-1604580864964-0462f5d5b1a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "https://uploads-ssl.webflow.com/5d86607a4a65571952512f06/5e70be54bf49c374de1fa946_first-principles.jpg",
       answers: [
         "Principles that are developed later in the understanding of a concept",
         "Foundational concepts or fundamental truths that serve as the basis for all other knowledge or understanding in a given field",
@@ -20,7 +20,7 @@ export type Question = {
     },
     {
       questionText: "Where did the concept of first principles originate?",
-      image: "https://images.unsplash.com/photo-1582034438152-77bc94ffa6ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGhpc3Rvcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      image: "https://www.ancienthistorylists.com/wp-content/uploads/2017/10/The-Rise-of-the-Greek-Tyrants.jpg",
       answers: [ 
         "Renaissance Italy", 
         "Industrial Revolution-era England", 
@@ -32,7 +32,7 @@ export type Question = {
     {
       questionText: "What is the process of deriving knowledge from first principles?",
       image:
-        "https://images.unsplash.com/photo-1574088768814-c71125083959?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGhpc3Rvcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "https://uploads-ssl.webflow.com/5d86607a4a65571952512f06/5e70be54bf49c374de1fa946_first-principles.jpg",
       answers: [
         "Breaking down a problem or concept into its most basic components", 
         "Taking complex concepts and making them more complicated",
@@ -44,8 +44,7 @@ export type Question = {
     {
       questionText:
         "What is the benefit of using first principles thinking?",
-        image:
-        "https://andscape.com/wp-content/uploads/2017/01/gettyimages-5307291001.jpg?w=700",
+        image: "https://uploads-ssl.webflow.com/5d86607a4a65571952512f06/5e70be54bf49c374de1fa946_first-principles.jpg",
       answers: [ 
         "It limits creativity and innovation", 
         "It is time-consuming and inefficient", 
