@@ -12,7 +12,7 @@ export default function Footer() {
         <hr />
 
         <Link 
-         href='http://mwambazi-collins.vercel.app/'
+         href='https://discord.gg/4EtUjB9F'
          target='_blank'
          rel='noopener noreferrer'>
            <button
