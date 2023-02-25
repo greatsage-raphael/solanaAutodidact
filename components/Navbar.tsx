@@ -46,7 +46,7 @@ export default function Navbar() {
           >
             Certificates 📜
           </Link>
-        </div>
+        </div><br />
 
         <div>
           <DemoModal />
