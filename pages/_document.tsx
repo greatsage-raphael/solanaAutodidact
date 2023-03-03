@@ -3,7 +3,9 @@ import { Html, Head, Main, NextScript } from 'next/document'
 export default function Document() {
   return (
     <Html>
-      <Head />
+      <Head >
+      <link rel="manifest" href="/manifest.json" />
+        </Head>
       <body className='bg-slate-900'>
         <Main />
         <NextScript />
