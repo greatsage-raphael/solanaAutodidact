@@ -1,4 +1,4 @@
-import HistoryGame from "../components/quizGame";
+import HistoryGame from "../components/firstPrincipleGame";
 import historyQuestions from "../questions/firstPrinciples";
 
 export default function HistoryQuiz() {

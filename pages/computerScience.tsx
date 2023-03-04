@@ -3,7 +3,7 @@ import { useConnection, useWallet } from "@solana/wallet-adapter-react"
 import { useEffect, useState } from "react"
 //import NftDisplay from "../components/NftDisplay"
 import PageHeading from "../components/PageHeading"
-import { COLLECTION_MINT_ADDRESS } from "../lib/constants"
+import { FIRST_MINT_ADDRESS } from "../lib/constants"
 import Subject from "../components/Subject";
 import Section from "../components/Section";
 import Link from 'next/link'
@@ -48,7 +48,7 @@ export default function Holders() {
       metadata =>
         metadata.collection !== null &&
         metadata.collection.verified &&
-        metadata.collection.address.toBase58() === COLLECTION_MINT_ADDRESS.toBase58()
+        metadata.collection.address.toBase58() === FIRST_MINT_ADDRESS.toBase58()
     )
 
     // Load the JSON for each NFT
