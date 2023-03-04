@@ -51,7 +51,7 @@ export default function Holders() {
 
   if (userNfts.length === 0) {
     return (
-      <PageHeading>Holders only! ☠️</PageHeading>
+      <PageHeading>Holders only! ⚠️</PageHeading>
     )
   }
 

@@ -3,9 +3,62 @@ import Subject from "../components/Subject";
 //import Symbol from "../components/Symbol";
 //import Link from 'next/link'
 import Section from "../components/Section";
+import { FIRST_MINT_ADDRESS } from "../lib/constants"
 import Link from 'next/link'
+import { Metadata, Metaplex, Nft } from "@metaplex-foundation/js"
+import { useConnection, useWallet } from "@solana/wallet-adapter-react"
+import { useEffect, useState } from "react"
 
 export default function History() {
+      const { connection } = useConnection()
+  const wallet = useWallet()
+  const [userNfts, setUserNfts] = useState<Nft[]>([])
+
+  const metaplex = Metaplex
+    .make(connection)
+
+  const nfts = metaplex.nfts()
+
+  async function getUserNfts() {
+    if (!wallet.publicKey) {
+      setUserNfts([])
+      return
+    }
+
+    // Fetch all the user's NFTs using the findAllByOwner function, which takes the owner public key as input and returns a list of objects describing the metadata of owned NFTs
+    const userNfts = await nfts
+      .findAllByOwner({ owner: wallet.publicKey })
+
+    // Filter to our collection
+    const ourCollectionNfts = userNfts.filter(
+      metadata =>
+        metadata.collection !== null &&
+        metadata.collection.verified &&
+        metadata.collection.address.toBase58() === FIRST_MINT_ADDRESS.toBase58()
+    )
+
+    // Load the JSON for each NFT
+    const loadedNfts = await Promise.all(ourCollectionNfts
+      .map(metadata => {
+        return nfts
+          .load({ metadata: metadata as Metadata })
+      })
+    )
+
+    console.log("Got their NFTs!", loadedNfts)
+    setUserNfts(loadedNfts as Nft[])
+  }
+
+  useEffect(() => {
+    getUserNfts()
+  }, [wallet.publicKey])
+
+  if (userNfts.length === 0) {
+    return (
+      <PageHeading>First Principle Nft Required ⚠️</PageHeading>
+    )
+  }
+
   return (
     <>
     <main className="flex flex-col gap-8 text-white">

@@ -1,22 +1,78 @@
+import { Metadata, Metaplex, Nft } from "@metaplex-foundation/js"
+import { useConnection, useWallet } from "@solana/wallet-adapter-react"
+import { useEffect, useState } from "react"
+//import NftDisplay from "../components/NftDisplay"
+import PageHeading from "../components/PageHeading"
+import { FIRST_MINT_ADDRESS } from "../lib/constants"
 import Subject from "../components/Subject";
 import Section from "../components/Section";
 import Link from 'next/link'
 import YouTube, { YouTubeProps } from 'react-youtube';
 
-export default function Individuation() {
-    const onPlayerReady: YouTubeProps['onReady'] = (event) => {
-        // access to player in all event handlers via event.target
-        event.target.pauseVideo();
-      }
-    
-      const opts: YouTubeProps['opts'] = {
-        height: '390',
-        width: '600',
-        playerVars: {
-          // https://developers.google.com/youtube/player_parameters
-          autoplay: 1,
-        },
-      };
+export default function Holders() {
+  const { connection } = useConnection()
+  const wallet = useWallet()
+  const [userNfts, setUserNfts] = useState<Nft[]>([])
+  
+  const onPlayerReady: YouTubeProps['onReady'] = (event) => {
+    // access to player in all event handlers via event.target
+    event.target.pauseVideo();
+  }
+
+  const opts: YouTubeProps['opts'] = {
+    height: '390',
+    width: '600',
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 1,
+    },
+  };
+
+  const metaplex = Metaplex
+    .make(connection)
+
+  const nfts = metaplex.nfts()
+
+  async function getUserNfts() {
+    if (!wallet.publicKey) {
+      setUserNfts([])
+      return
+    }
+
+    // Fetch all the user's NFTs using the findAllByOwner function, which takes the owner public key as input and returns a list of objects describing the metadata of owned NFTs
+    const userNfts = await nfts
+      .findAllByOwner({ owner: wallet.publicKey })
+
+    // Filter to our collection
+    const ourCollectionNfts = userNfts.filter(
+      metadata =>
+        metadata.collection !== null &&
+        metadata.collection.verified &&
+        metadata.collection.address.toBase58() === FIRST_MINT_ADDRESS.toBase58()
+    )
+
+    // Load the JSON for each NFT
+    const loadedNfts = await Promise.all(ourCollectionNfts
+      .map(metadata => {
+        return nfts
+          .load({ metadata: metadata as Metadata })
+      })
+    )
+
+    console.log("Got their NFTs!", loadedNfts)
+    setUserNfts(loadedNfts as Nft[])
+  }
+
+  useEffect(() => {
+    getUserNfts()
+  }, [wallet.publicKey])
+
+  if (userNfts.length === 0) {
+    return (
+      <PageHeading>First Principle Nft required ⚠️</PageHeading>
+    )
+  }
+
   return (
     <>
     <main className="flex flex-col gap-8 text-white">
@@ -78,6 +134,5 @@ export default function Individuation() {
         </button> 
         </Link>
     	</>
-      
-  );
+  )
 }
