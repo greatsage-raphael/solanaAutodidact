@@ -49,10 +49,6 @@ export default function Home() {
         </button> 
         </Link>
 
-    
-
-        
-
         <Link href="/individuation">
         <button
           type="button"
