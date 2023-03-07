@@ -13,6 +13,7 @@ export default function Footer() {
           Twitter 🐦
         </button>
         </Link> 
+        <br />
 
         <Link 
          href='http://mwambazi-collins.vercel.app/'
@@ -20,7 +21,7 @@ export default function Footer() {
          rel='noopener noreferrer'>
            Built with 🎧 & ❤️ in kampala.
         </Link>
-        <hr />
+        <br />
 
         <Link 
          href='https://discord.gg/4EtUjB9F'
