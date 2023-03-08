@@ -7,7 +7,7 @@ export default function Home() {
   
   return (
     <main className="flex flex-col gap-8">
-      <Text>First Principles</Text>
+      <Text>Tier I</Text>
 
       <Link href="/firstPrinciples">
         <button
@@ -38,7 +38,7 @@ export default function Home() {
 
         <hr/>
 
-        <Text>Fields</Text>
+        <Text>Tier II</Text>
 
         <Link href="/history">
       <button
